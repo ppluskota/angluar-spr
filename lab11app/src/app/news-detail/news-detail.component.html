@@ -1,0 +1,9 @@
+<div class="jumbotron">
+	<h1 class="display-4">{{news?.name}}</h1>
+	<br>
+	<img style="height:600px; object-fit:cover;width:100%" src={{news?.photo.retinaUrl}}>
+	<div [innerHTML]=news?.description></div>	
+	<hr class="my-4">
+	<p>Dream, Plan, Do, and Share your Bucket List! Use our extensive inventory of Things to Do and Dreams to inspire new adventures and experiences. Want more? <a href="https://tripbucket.com/">Check here!</a></p>
+	<a class="btn btn-primary btn-lg" routerLink="/trip" role="button">Back</a>
+</div>

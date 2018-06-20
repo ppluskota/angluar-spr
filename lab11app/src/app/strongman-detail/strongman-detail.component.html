@@ -1,0 +1,27 @@
+<div class="Container">
+	<div *ngIf="selectedStrongman;else other_content">
+  		<h2><b> {{ selectedStrongman.fName }} {{ selectedStrongman.lName }} </b></h2>
+  		<div class="form-group">
+      		<label for="fname">First name:</label>
+      		<input type="text" class="form-control" id="fname" placeholder="Enter name" [(ngModel)]="selectedStrongman.fName">
+    	</div>
+    	<div class="form-group">
+      		<label for="lname">Last name:</label>
+      		<input type="text" class="form-control" id="lname" placeholder="Enter last name" [(ngModel)]="selectedStrongman.lName">
+    	</div>
+    	<div class="form-group">
+      		<label for="record">Record:</label>
+      		<input type="number" class="form-control" id="record" placeholder="Enter record" [(ngModel)]="selectedStrongman.liftRecord">
+    	</div>
+    	<div class="form-group">
+      		<label for="age">Age:</label>
+      		<input type="number" class="form-control" id="age" placeholder="Enter age" [(ngModel)]="selectedStrongman.age">
+    	</div>
+    	  		<div class="form-group">
+      		<label for="weight">Weight:</label>
+      		<input type="number" class="form-control" id="weight" placeholder="Enter weight" [(ngModel)]="selectedStrongman.weight">
+    	</div>
+    	<p>Avarage Score: {{ avarageScore }} kg</p>
+	</div>
+	<a class="btn btn-primary btn-lg" routerLink="/strongman" role="button">Back</a>
+</div>

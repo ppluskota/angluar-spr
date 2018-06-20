@@ -1,0 +1,28 @@
+<div class="Container">
+  		<h2><b> Create new Strongman </b></h2>
+  		<div class="form-group">
+      		<label for="fname">First name:</label>
+      		<input type="text" class="form-control" id="fname" placeholder="Enter name" [(ngModel)]="firstName">
+    	</div>
+    	<div class="form-group">
+      		<label for="lname">Last name:</label>
+      		<input type="text" class="form-control" id="lname" placeholder="Enter last name" [(ngModel)]="lastName">
+    	</div>
+    	<div class="form-group">
+      		<label for="record">Record:</label>
+      		<input type="number" class="form-control" id="record" placeholder="Enter record" [(ngModel)]="bestScore">
+    	</div>
+    	<div class="form-group">
+      		<label for="age">Age:</label>
+      		<input type="number" class="form-control" id="age" placeholder="Enter age" [(ngModel)]="age">
+    	</div>
+    	  		<div class="form-group">
+      		<label for="weight">Weight:</label>
+      		<input type="number" class="form-control" id="weight" placeholder="Enter weight" [(ngModel)]="weight">
+    	</div>
+  	<div class="btn-group" role="group">
+		<a (click)="add(strongman)" routerLink="/strongman" class="btn btn-warning btn-lg" role="button">Add</a>
+		<a class="btn btn-primary btn-lg" routerLink="/strongman" role="button">Back</a>
+	</div>
+	
+</div>
