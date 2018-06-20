@@ -1,5 +1,5 @@
 <div class="Container">
-	<h2>Top 10 Most Impressive World's Strongest Men</h2>
+	<h2>Top {{ strongmanArray.length }} Most Impressive World's Strongest Men</h2>
 	<button routerLink="/strongmanAdd" type="button" class="btn btn-warning">ADD</button>
 	<ul *ngFor="let strongman of strongmanArray">
     	<li> <b>{{strongman.fName}} {{strongman.lName}}</b> highest score: {{strongman.liftRecord}} kg </li>
